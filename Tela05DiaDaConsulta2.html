@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Care Plus - Área do Paciente</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<style>
+		body {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			background-color: #f0f4f8;
+			overflow-x: hidden;
+		}
+
+		.gradient-bg {
+			background: linear-gradient(180deg, #C8E1F4 0%, #f0f4f8 100%);
+		}
+
+		.sidebar-card {
+			background: rgba(255, 255, 255, 0.7);
+			backdrop-filter: blur(10px);
+		}
+	</style>
+</head>
+
+<body class="min-h-screen flex flex-col">
+
+	<!-- Header -->
+	<header class="bg-white p-4 flex justify-between items-center px-12 shadow-sm sticky top-0 z-50">
+		<div class="flex items-center gap-8">
+			<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/534uegdy_expires_30_days.png"
+				alt="Care Plus" class="h-10">
+			<!-- Barra de Pesquisa solicitada na imagem -->
+			<div class="relative flex items-center">
+				<input type="text" placeholder="Pesquisar..."
+					class="bg-[#C8E1F4]/50 rounded-lg py-1.5 px-4 w-64 text-sm focus:outline-none">
+				<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/gt33lmuz_expires_30_days.png"
+					class="w-4 h-4 absolute right-3 opacity-50">
+			</div>
+		</div>
+
+		<nav class="flex gap-8 items-center">
+			<a href="#" class="text-[#0079C8] font-semibold underline">Página Inicial</a>
+			<a href="#" class="text-gray-400">Agendamentos</a>
+			<a href="#" class="text-gray-400">Meu Perfil</a>
+			<div class="relative">
+				<div class="bg-red-500 w-2 h-2 rounded-full absolute top-0 right-0"></div>
+				<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/xlqc5cq3_expires_30_days.png"
+					class="w-6 h-6 opacity-60" alt="Notificações">
+			</div>
+		</nav>
+	</header>
+
+	<main class="flex-1 gradient-bg p-8 px-16 flex gap-8">
+
+		<!-- Coluna Principal (Esquerda) -->
+		<div class="flex-[2.5] flex flex-col gap-6">
+			<h1 class="text-4xl font-bold text-[#0B0F3E]">Olá, Paciente!</h1>
+
+			<!-- Card de Próximo Agendamento -->
+			<section class="bg-white/80 rounded-3xl p-8 border border-white shadow-sm">
+				<h2 class="text-2xl font-bold text-[#00075F] mb-2">Próximo Agendamento</h2>
+				<!-- Ajustado para 2 horas conforme imagem -->
+				<p class="text-sm mb-8 text-gray-700">Em <span class="text-red-600 font-bold italic text-base">2
+						horas</span> - Cancelamento ou reagendamento <span class="font-bold">indisponível</span>.</p>
+
+				<div class="grid grid-cols-2 gap-y-8">
+					<div class="flex items-center gap-4">
+						<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/b9rwqljs_expires_30_days.png"
+							class="w-10 h-10">
+						<span class="text-[#00075F] font-bold">12:30 AM</span>
+					</div>
+					<div class="flex items-center gap-4">
+						<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/b2agzjek_expires_30_days.png"
+							class="w-10 h-10">
+						<span class="text-[#00075F] font-bold">14/11/2025 | Sexta-feira</span>
+					</div>
+					<div class="flex items-center gap-4">
+						<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/mdr1n9p4_expires_30_days.png"
+							class="w-6 h-8 mx-2">
+						<span class="text-[#00075F] text-sm leading-tight max-w-[200px]">R. Fidêncio Ramos, 302 - Vila
+							Olímpia, São Paulo.</span>
+					</div>
+					<div class="flex items-center gap-4">
+						<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/0pz8cn0e_expires_30_days.png"
+							class="w-10 h-10">
+						<span class="text-[#00075F] text-sm leading-tight">Devido o horário de pico, há uma previsão de
+							<span class="text-green-500 font-bold">34 minutos</span> para sua chegada ao local.</span>
+					</div>
+				</div>
+			</section>
+
+			<!-- Cards de Ação (Azul Escuro) -->
+			<div class="grid grid-cols-3 gap-6">
+				<div
+					class="bg-[#1D265A] rounded-2xl p-6 flex flex-col items-center justify-center text-[#5998C2] hover:bg-[#253173] transition-colors cursor-pointer">
+					<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/03zq8gur_expires_30_days.png"
+						class="w-12 h-12 mb-3">
+					<span class="font-semibold">Agendamentos</span>
+				</div>
+				<div
+					class="bg-[#1D265A] rounded-2xl p-6 flex flex-col items-center justify-center text-[#5998C2] hover:bg-[#253173] transition-colors cursor-pointer text-center">
+					<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/0obfiox7_expires_30_days.png"
+						class="w-12 h-12 mb-3">
+					<span class="font-semibold leading-tight">Reagendamento</span>
+				</div>
+				<div
+					class="bg-[#1D265A] rounded-2xl p-6 flex flex-col items-center justify-center text-[#5998C2] hover:bg-[#253173] transition-colors cursor-pointer">
+					<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/9719ocyh_expires_30_days.png"
+						class="w-12 h-12 mb-3">
+					<span class="font-semibold">Care+</span>
+				</div>
+			</div>
+
+			<!-- Área do Paciente (Texto) -->
+			<section class="bg-white/80 rounded-3xl p-8 border border-white">
+				<h2 class="text-2xl font-bold text-[#00075F] mb-4">Área do Paciente</h2>
+				<div class="space-y-2">
+					<p class="text-xs text-[#0079C8]">28/10/2025 - <span class="italic font-bold">Benefício
+							Desbloqueado!</span> - <a href="#" class="underline">Venha ver</a> um pouco mais dos
+						benefícios disponíveis ao atingir o <span class="text-yellow-500 font-bold">Nível Ouro
+							Care+</span></p>
+					<p class="text-xs text-[#0079C8]">10/10/2025 - <span class="italic font-bold">Badget
+							Desbloqueado!</span> - Parabéns! Você desbloqueou o badget ‘Paciente Pontual’. <a href="#"
+							class="underline">Confira!</a></p>
+				</div>
+			</section>
+		</div>
+
+		<!-- Coluna Lateral (Direita) -->
+		<div class="flex-1 flex flex-col gap-6">
+			<!-- Nível Ouro -->
+			<div class="sidebar-card rounded-3xl p-6 border border-white flex flex-col items-center">
+				<p class="text-[#00075F] font-medium mb-4">Você é um paciente <span
+						class="text-yellow-500 font-bold">Ouro!</span></p>
+				<div class="flex items-center gap-4 mb-4">
+					<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/om9gsyeq_expires_30_days.png"
+						class="w-16 h-16">
+					<div class="bg-white border rounded-xl p-3 shadow-inner">
+						<p class="text-[10px] text-blue-600 font-bold leading-tight">Faltam 7 pontos para próximo nível!
+						</p>
+					</div>
+				</div>
+				<a href="#" class="text-[10px] text-blue-400 underline flex items-center gap-1">
+					Descubra as recompensas do seu nível!
+					<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/appjtziy_expires_30_days.png"
+						class="w-3 h-3">
+				</a>
+			</div>
+
+			<!-- Carteira Digital -->
+			<div
+				class="bg-[#5998C2]/80 backdrop-blur-md rounded-3xl p-6 border border-white flex flex-col items-center text-white">
+				<div class="flex items-center gap-2 mb-2">
+					<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/duhhyke4_expires_30_days.png"
+						class="w-8 h-8">
+					<h3 class="text-lg font-bold text-[#0B0F3E]">Carteira Digital</h3>
+				</div>
+				<p class="text-xs text-[#0B0F3E] mb-4">Nº <span class="font-bold text-white">0000.111.2222.333-4</span>
+				</p>
+				<div class="bg-white p-4 rounded-xl shadow-lg">
+					<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/x2iyunxh_expires_30_days.png"
+						class="w-32 h-32">
+				</div>
+			</div>
+		</div>
+
+		<!-- Notificação do Windows (Waze) - Canto Inferior Direito -->
+		<div
+			class="fixed bottom-24 right-8 bg-white/95 rounded-lg shadow-2xl border p-4 w-80 z-[100] animate-bounce-short">
+			<div class="flex justify-between items-center mb-2">
+				<div class="flex gap-2 items-center">
+					<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/35thrsgy_expires_30_days.png"
+						class="w-4 h-4" alt="Outlook/System">
+					<span class="text-[10px] text-gray-500 font-medium">Outlook</span>
+				</div>
+				<button class="text-gray-400 text-lg">&times;</button>
+			</div>
+			<div class="flex gap-3 mb-4">
+				<!-- Ícone do Waze como na imagem -->
+				<div class="w-14 h-14 bg-[#33CCFF] rounded-full flex items-center justify-center shrink-0">
+					<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/kq6x8fzf_expires_30_days.png"
+						class="w-10 h-10 object-contain">
+				</div>
+				<div class="overflow-hidden">
+					<p class="text-xs font-bold truncate">Waze</p>
+					<p class="text-[11px] font-bold text-gray-700 leading-tight">Hora de Sair Para Consulta! 🚙</p>
+					<p class="text-[11px] text-gray-500 leading-tight mt-1">Olá, Paciente! Sua consulta está próxima,
+						que tal verificar as condições de trânsito...</p>
+				</div>
+			</div>
+			<div class="flex border-t pt-3 gap-2 justify-around">
+				<button
+					class="text-[10px] text-gray-600 font-medium hover:bg-gray-100 px-2 py-1 rounded">Excluir</button>
+				<button
+					class="text-[10px] text-gray-600 font-medium hover:bg-gray-100 px-2 py-1 rounded">Sinalizador</button>
+				<button
+					class="text-[10px] text-gray-600 font-medium hover:bg-gray-100 px-2 py-1 rounded">Ignorar</button>
+			</div>
+		</div>
+	</main>
+
+	<!-- Barra de Tarefas Simbolizada -->
+	<footer class="h-12 bg-white/40 backdrop-blur-md flex items-center justify-center">
+		<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/osn7bwjm_expires_30_days.png"
+			class="h-10">
+	</footer>
+
+</body>
+
+</html>

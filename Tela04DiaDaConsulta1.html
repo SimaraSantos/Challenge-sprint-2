@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Care Plus - Página Inicial</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<style>
+		body {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			background-color: #f0f4f8;
+		}
+
+		.browser-shadow {
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+		}
+
+		.gradient-bg {
+			background: linear-gradient(180deg, #C8E1F4 0%, #F0F4F8 100%);
+		}
+	</style>
+</head>
+
+<body class="min-h-screen flex flex-col">
+
+	<!-- Header / Navbar -->
+	<header class="bg-white p-4 flex justify-between items-center px-12 shadow-sm relative z-10">
+		<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/q80v78qr_expires_30_days.png"
+			alt="Care Plus" class="h-12">
+		<nav class="flex gap-8 items-center">
+			<a href="#" class="text-[#0079C8] font-semibold underline">Página Inicial</a>
+			<a href="#" class="text-gray-400">Agendamentos</a>
+			<a href="#" class="text-gray-400">Meu Perfil</a>
+			<div class="relative">
+				<div class="bg-red-500 w-2 h-2 rounded-full absolute top-0 right-0"></div>
+				<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/8sukxfmf_expires_30_days.png"
+					class="w-6 h-6 opacity-60" alt="Notificações">
+			</div>
+		</nav>
+	</header>
+
+	<!-- Browser Notification Pop-up (Chrome Style) -->
+	<div class="absolute top-20 left-24 bg-white rounded-lg shadow-xl border p-4 z-50 w-72">
+		<p class="text-sm text-gray-800 mb-4">www8.careplus.com.br deseja</p>
+		<div class="flex items-center gap-3 mb-6">
+			<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/h8s0rslb_expires_30_days.png"
+				class="w-5 h-5">
+			<span class="text-sm font-medium">Mostrar notificações</span>
+		</div>
+		<div class="flex justify-end gap-2">
+			<button class="px-4 py-1 border rounded text-sm hover:bg-gray-50">Bloquear</button>
+			<button class="px-4 py-1 border rounded text-sm bg-white hover:bg-gray-50">Permitir</button>
+		</div>
+	</div>
+
+	<main class="flex-1 gradient-bg p-8 flex gap-8 px-24 relative">
+
+		<!-- Conteúdo Esquerda -->
+		<div class="flex-[2] flex flex-col gap-6">
+			<h1 class="text-4xl font-bold text-[#0B0F3E] mb-2">Olá, Paciente!</h1>
+
+			<!-- Próximo Agendamento -->
+			<section class="bg-white/80 backdrop-blur-md rounded-3xl p-8 border border-white shadow-sm">
+				<h2 class="text-2xl font-bold text-[#00075F] mb-2">Próximo Agendamento</h2>
+				<p class="text-sm mb-8">Em <span class="text-red-600 font-bold italic">2 dias</span> - Cancelamento ou
+					reagendamento <span class="font-bold">indisponível</span>.</p>
+
+				<div class="grid grid-cols-2 gap-y-8 gap-x-4">
+					<div class="flex items-center gap-4">
+						<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/u2xdr1k1_expires_30_days.png"
+							class="w-10 h-10">
+						<span class="text-[#00075F] font-semibold">12:30 AM</span>
+					</div>
+					<div class="flex items-center gap-4">
+						<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/wxeni4rv_expires_30_days.png"
+							class="w-10 h-10">
+						<span class="text-[#00075F] font-semibold">14/11/2025 | Sexta-feira</span>
+					</div>
+					<div class="flex items-center gap-4">
+						<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/hf7w92yh_expires_30_days.png"
+							class="w-6 h-8 mx-2">
+						<span class="text-[#00075F] text-sm leading-tight">R. Fidêncio Ramos, 302 - Vila Olímpia, São
+							Paulo.</span>
+					</div>
+					<div class="flex items-center gap-4">
+						<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/luxch4iq_expires_30_days.png"
+							class="w-10 h-10">
+						<span class="text-[#00075F] text-sm leading-tight">Devido o horário de pico, há uma previsão de
+							<span class="text-green-500 font-bold">34 minutos</span> para sua chegada ao local.</span>
+					</div>
+				</div>
+			</section>
+
+			<!-- Cards de Ação -->
+			<div class="grid grid-cols-3 gap-6">
+				<div
+					class="bg-[#1D265A] rounded-2xl p-6 flex flex-col items-center justify-center text-[#5998C2] cursor-pointer">
+					<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/6m965ryz_expires_30_days.png"
+						class="w-12 h-12 mb-2">
+					<span class="font-semibold">Agendamentos</span>
+				</div>
+				<div
+					class="bg-[#1D265A] rounded-2xl p-6 flex flex-col items-center justify-center text-[#5998C2] cursor-pointer">
+					<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/bpm5j0od_expires_30_days.png"
+						class="w-12 h-12 mb-2">
+					<span class="font-semibold text-center leading-tight">Reagendamento</span>
+				</div>
+				<div
+					class="bg-[#1D265A] rounded-2xl p-6 flex flex-col items-center justify-center text-[#5998C2] cursor-pointer">
+					<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/0fihj1cx_expires_30_days.png"
+						class="w-12 h-12 mb-2">
+					<span class="font-semibold">Care+</span>
+				</div>
+			</div>
+
+			<!-- Área do Paciente -->
+			<section class="bg-white/80 backdrop-blur-md rounded-3xl p-8 border border-white shadow-sm">
+				<h2 class="text-2xl font-bold text-[#00075F] mb-4">Área do Paciente</h2>
+				<div class="space-y-3">
+					<p class="text-xs text-blue-500">28/10/2025 - <span class="italic font-bold">Benefício
+							Desbloqueado!</span> - <a href="#" class="underline">Venha ver</a> um pouco mais dos
+						benefícios disponíveis ao atingir o <span class="text-yellow-500 font-bold">Nível Ouro
+							Care+</span></p>
+					<p class="text-xs text-blue-500">10/10/2025 - <span class="italic font-bold">Badget
+							Desbloqueado!</span> - Parabéns! Você desbloqueou o badget ‘Paciente Pontual’. <a href="#"
+							class="underline">Confira!</a></p>
+				</div>
+			</section>
+		</div>
+
+		<!-- Conteúdo Direita (Sidebar) -->
+		<div class="flex-1 flex flex-col gap-6">
+			<!-- Card Ouro -->
+			<div class="bg-white/80 rounded-3xl p-6 shadow-sm border border-white flex flex-col items-center">
+				<p class="text-[#00075F] mb-4">Você é um paciente <span class="text-yellow-500 font-bold">Ouro!</span>
+				</p>
+				<div class="flex items-center gap-4 mb-4">
+					<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/ngjr5dtk_expires_30_days.png"
+						class="w-16 h-16">
+					<div class="bg-white border rounded-xl p-3 shadow-inner">
+						<p class="text-[10px] text-blue-600 font-bold leading-tight">Faltam 7 pontos para próximo nível!
+						</p>
+					</div>
+				</div>
+				<a href="#" class="text-[10px] text-blue-400 underline">Descubra as recompensas do seu nível!</a>
+			</div>
+
+			<!-- Carteira Digital -->
+			<div class="bg-[#5998C2] rounded-3xl p-6 shadow-sm flex flex-col items-center text-white">
+				<div class="flex items-center gap-2 mb-2">
+					<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/ghk5uhxc_expires_30_days.png"
+						class="w-8 h-8">
+					<h3 class="text-lg font-bold text-[#0B0F3E]">Carteira Digital</h3>
+				</div>
+				<p class="text-xs text-[#0B0F3E] mb-4">Nº <span class="font-bold text-white">0000.111.2222.333-4</span>
+				</p>
+				<div class="bg-white p-4 rounded-xl">
+					<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/op7bqzm1_expires_30_days.png"
+						class="w-32 h-32">
+				</div>
+			</div>
+		</div>
+
+		<!-- Outlook Notification Pop-up (Bottom Right) -->
+		<div class="fixed bottom-24 right-8 bg-white/95 rounded-lg shadow-2xl border p-4 w-80 z-50">
+			<div class="flex justify-between items-start mb-2">
+				<div class="flex gap-2 items-center">
+					<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/35thrsgy_expires_30_days.png"
+						class="w-5 h-5">
+					<span class="text-xs text-gray-500">Outlook</span>
+				</div>
+				<button class="text-gray-400">×</button>
+			</div>
+			<div class="flex gap-3 mb-4">
+				<div class="bg-blue-600 p-2 rounded-lg text-white font-bold">CarePlus</div>
+				<div>
+					<p class="text-sm font-bold">CarePlus</p>
+					<p class="text-xs text-gray-600">Sua Consulta Está Próxima! 🩺</p>
+					<p class="text-[10px] text-gray-400 leading-tight">Olá, gostaria de lembrar que sua consulta está
+						próxima. Se programe...</p>
+				</div>
+			</div>
+			<div class="flex border-t pt-3 gap-1">
+				<button class="flex-1 py-1 text-[10px] hover:bg-gray-100 rounded">Excluir</button>
+				<button class="flex-1 py-1 text-[10px] hover:bg-gray-100 rounded">Sinalizador</button>
+				<button class="flex-1 py-1 text-[10px] hover:bg-gray-100 rounded">Ignorar</button>
+			</div>
+		</div>
+	</main>
+
+	<!-- Taskbar / Footer sim -->
+	<footer class="h-12 bg-white/50 backdrop-blur-lg flex items-center justify-center gap-4">
+		<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/h9m6j4dn_expires_30_days.png"
+			class="h-10">
+	</footer>
+
+</body>
+
+</html>
