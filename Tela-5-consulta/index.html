@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Care Plus - Área do Paciente</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<header class="header-main sticky-top shadow-sm">
+		<div class="container-fluid d-flex justify-content-between align-items-center px-lg-5 py-3">
+			<div class="d-flex align-items-center gap-4">
+				<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/534uegdy_expires_30_days.png"
+					alt="Care Plus" height="40">
+				<div class="search-container d-none d-md-flex align-items-center">
+					<input type="text" placeholder="Pesquisar..." id="search-box">
+					<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/gt33lmuz_expires_30_days.png"
+						width="16">
+				</div>
+			</div>
+			<nav class="nav-links d-flex align-items-center gap-4">
+				<a href="#" class="nav-active">Página Inicial</a>
+				<a href="#" class="nav-item">Agendamentos</a>
+				<a href="#" class="nav-item">Meu Perfil</a>
+				<div class="notification-icon">
+					<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/xlqc5cq3_expires_30_days.png"
+						width="24">
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main class="main-content py-5">
+		<div class="container-fluid px-lg-5">
+			<div class="row g-5">
+				<div class="col-lg-8">
+					<h1 class="welcome-msg mb-4" id="greeting-msg">Olá, Paciente!</h1>
+
+					<section class="glass-card mb-4 p-4 p-md-5">
+						<h2 class="section-title">Próximo Agendamento</h2>
+						<p class="status-subtitle mb-5">Em <span class="highlight-red">2 horas</span> - Cancelamento
+							indisponível.</p>
+
+						<div class="row g-4">
+							<div class="col-md-6 d-flex align-items-center gap-3">
+								<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/b9rwqljs_expires_30_days.png"
+									width="40">
+								<span class="info-bold">12:30 AM</span>
+							</div>
+							<div class="col-md-6 d-flex align-items-center gap-3">
+								<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/b2agzjek_expires_30_days.png"
+									width="40">
+								<span class="info-bold">14/11/2025 | Sexta-feira</span>
+							</div>
+							<div class="col-md-6 d-flex align-items-center gap-3">
+								<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/mdr1n9p4_expires_30_days.png"
+									height="30">
+								<span class="info-small">R. Fidêncio Ramos, 302 - Vila Olímpia, SP.</span>
+							</div>
+							<div class="col-md-6 d-flex align-items-center gap-3">
+								<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/0pz8cn0e_expires_30_days.png"
+									width="40">
+								<span class="info-small">Previsão de <span class="text-green fw-bold">34 minutos</span>
+									para chegada.</span>
+							</div>
+						</div>
+					</section>
+
+					<div class="row g-4 mb-4">
+						<div class="col-md-4"><button class="btn-action"
+								onclick="app.action('Agendamentos')">Agendamentos</button></div>
+						<div class="col-md-4"><button class="btn-action"
+								onclick="app.action('Reagendamento')">Reagendamento</button></div>
+						<div class="col-md-4"><button class="btn-action" onclick="app.action('Care+')">Care+</button>
+						</div>
+					</div>
+
+					<section class="glass-card p-4">
+						<h2 class="section-title mb-3">Área do Paciente</h2>
+						<div id="dynamic-logs" class="logs-container">
+							<p class="log-item">28/10/2025 - <strong>Benefício Desbloqueado!</strong> - Nível Ouro Care+
+							</p>
+							<p class="log-item">10/10/2025 - <strong>Badge Desbloqueado!</strong> - Paciente Pontual.
+							</p>
+						</div>
+					</section>
+				</div>
+
+				<div class="col-lg-4">
+					<div class="glass-card p-4 text-center mb-4">
+						<p class="mb-3">Você é um paciente <span class="text-gold fw-bold">Ouro!</span></p>
+						<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/om9gsyeq_expires_30_days.png"
+							width="70" class="mb-3">
+						<div class="progress-box mb-2">Faltam 7 pontos para próximo nível!</div>
+						<a href="#" class="recompensa-link">Descubra as recompensas do seu nível!</a>
+					</div>
+
+					<div class="wallet-card p-4 text-center">
+						<h3 class="wallet-title mb-2">Carteira Digital</h3>
+						<p class="wallet-num mb-3">Nº 0000.111.2222.333-4</p>
+						<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/x2iyunxh_expires_30_days.png"
+							width="130" class="qr-code">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="waze-popup shadow-lg" id="notif-waze">
+			<div class="d-flex justify-content-between align-items-center mb-2">
+				<span class="small-grey">Outlook</span>
+				<button class="btn-close-custom" onclick="app.closeNotif()">×</button>
+			</div>
+			<div class="d-flex gap-3 align-items-center">
+				<div class="waze-icon-bg">
+					<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/kq6x8fzf_expires_30_days.png"
+						width="35">
+				</div>
+				<div>
+					<strong class="d-block small">Waze</strong>
+					<span class="d-block fw-bold small">Hora de Sair! 🚙</span>
+					<p class="notif-text mb-0">Verifique o trânsito para sua consulta.</p>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+
+</html>

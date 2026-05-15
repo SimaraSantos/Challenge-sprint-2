@@ -1,0 +1,137 @@
+:root {
+    --primary-blue: #0079C8;
+    --dark-navy: #0B0F3E;
+    --light-blue: #5998C2;
+    --gold: #F9C200;
+}
+
+body {
+    background: linear-gradient(180deg, #C8E1F4 0%, #F0F4F8 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header */
+.navbar-area {
+    background: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.nav-active {
+    color: var(--primary-blue);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.nav-item {
+    color: #9ca3af;
+    text-decoration: none;
+}
+
+/* Cards Efeito Vidro */
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    border: 1px solid white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+
+.welcome-title {
+    color: var(--dark-navy);
+    font-weight: bold;
+}
+
+.card-title {
+    color: #00075F;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Status */
+.status-alert {
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+.highlight-red {
+    color: #dc2626;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.text-green {
+    color: #10b981;
+    font-weight: bold;
+}
+
+/* Botões de Ação */
+.action-card {
+    background: #1D265A;
+    color: var(--light-blue);
+    border: none;
+    border-radius: 20px;
+    padding: 30px 10px;
+    width: 100%;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.action-card:hover {
+    transform: translateY(-3px);
+    background: #151b41;
+}
+
+/* Sidebar */
+.text-gold {
+    color: var(--gold);
+}
+
+.progress-container {
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+.text-blue-small {
+    color: var(--primary-blue);
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.recompensa-link {
+    color: #60a5fa;
+    font-size: 0.7rem;
+    text-decoration: underline;
+}
+
+/* Carteira */
+.wallet-card {
+    background: var(--light-blue);
+    border-radius: 25px;
+    color: white;
+}
+
+.wallet-title {
+    color: var(--dark-navy);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.wallet-num {
+    color: var(--dark-navy);
+    font-size: 0.8rem;
+}
+
+.qr-code {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.text-blue {
+    color: #3b82f6;
+    font-size: 0.75rem;
+    margin-bottom: 8px;
+}

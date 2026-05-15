@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Care Plus - Dashboard</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<header class="navbar-area">
+		<div class="container-fluid d-flex justify-content-between align-items-center px-lg-5">
+			<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/q80v78qr_expires_30_days.png"
+				alt="Care Plus" height="50">
+			<nav class="nav-links d-flex align-items-center gap-4">
+				<a href="#" class="nav-active">Página Inicial</a>
+				<a href="#" class="nav-item">Agendamentos</a>
+				<a href="#" class="nav-item">Meu Perfil</a>
+				<div class="notification-bell">
+					<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/8sukxfmf_expires_30_days.png"
+						width="24">
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main class="container-fluid py-4 px-lg-5">
+		<div class="row">
+			<div class="col-lg-8">
+				<h1 class="welcome-title mb-4" id="greeting">Olá, Paciente!</h1>
+
+				<section class="glass-card p-4 mb-4">
+					<h2 class="card-title mb-1">Próximo Agendamento</h2>
+					<p class="status-alert mb-4">Em <span class="highlight-red">2 dias</span> - Cancelamento ou
+						reagendamento <strong>indisponível</strong>.</p>
+
+					<div class="row g-4">
+						<div class="col-md-6 d-flex align-items-center gap-3">
+							<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/u2xdr1k1_expires_30_days.png"
+								width="40">
+							<span class="info-text">12:30 AM</span>
+						</div>
+						<div class="col-md-6 d-flex align-items-center gap-3">
+							<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/wxeni4rv_expires_30_days.png"
+								width="40">
+							<span class="info-text">14/11/2025 | Sexta-feira</span>
+						</div>
+						<div class="col-md-6 d-flex align-items-center gap-3">
+							<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/hf7w92yh_expires_30_days.png"
+								height="30">
+							<span class="info-text small">R. Fidêncio Ramos, 302 - Vila Olímpia, SP.</span>
+						</div>
+						<div class="col-md-6 d-flex align-items-center gap-3">
+							<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/luxch4iq_expires_30_days.png"
+								width="40">
+							<span class="info-text small">Previsão de <span class="text-green">34 minutos</span> para
+								chegada.</span>
+						</div>
+					</div>
+				</section>
+
+				<div class="row g-3 mb-4">
+					<div class="col-4"><button class="action-card"
+							onclick="app.logAction('Agendamentos')">Agendamentos</button></div>
+					<div class="col-4"><button class="action-card"
+							onclick="app.logAction('Reagendamento')">Reagendamento</button></div>
+					<div class="col-4"><button class="action-card" onclick="app.logAction('Care+')">Care+</button></div>
+				</div>
+
+				<section class="glass-card p-4">
+					<h2 class="card-title mb-3">Área do Paciente</h2>
+					<div id="notifications-list" class="small-text">
+						<p class="text-blue">28/10/2025 - <strong>Benefício Desbloqueado!</strong> - Nível Ouro Care+
+						</p>
+						<p class="text-blue">10/10/2025 - <strong>Badge Desbloqueado!</strong> - Paciente Pontual.</p>
+					</div>
+				</section>
+			</div>
+
+			<div class="col-lg-4">
+				<div class="glass-card p-4 text-center mb-4">
+					<p class="mb-3">Você é um paciente <span class="text-gold fw-bold">Ouro!</span></p>
+					<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/ngjr5dtk_expires_30_days.png"
+						width="80" class="mb-3">
+					<div class="progress-container p-2 mb-2">
+						<span class="text-blue-small">Faltam 7 pontos para próximo nível!</span>
+					</div>
+					<a href="#" class="recompensa-link">Descubra as recompensas!</a>
+				</div>
+
+				<div class="wallet-card p-4 text-center">
+					<h3 class="wallet-title mb-2">Carteira Digital</h3>
+					<p class="wallet-num mb-3">Nº 0000.111.2222.333-4</p>
+					<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/op7bqzm1_expires_30_days.png"
+						width="140" class="qr-code">
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+
+</html>

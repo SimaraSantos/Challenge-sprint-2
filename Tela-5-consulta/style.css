@@ -1,0 +1,168 @@
+:root {
+    --primary-blue: #0079C8;
+    --dark-navy: #0B0F3E;
+    --light-blue: #5998C2;
+    --gold: #F9C200;
+}
+
+body {
+    background: linear-gradient(180deg, #C8E1F4 0%, #F0F4F8 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.header-main {
+    background: white;
+    z-index: 1000;
+}
+
+.search-container {
+    background: rgba(200, 225, 244, 0.5);
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+
+#search-box {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+.nav-active {
+    color: var(--primary-blue);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.nav-item {
+    color: #9ca3af;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    border: 1px solid white;
+}
+
+.welcome-msg {
+    color: var(--dark-navy);
+    font-weight: 800;
+}
+
+.section-title {
+    color: #00075F;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.status-subtitle {
+    color: #4b5563;
+    font-size: 0.85rem;
+}
+
+.highlight-red {
+    color: #dc2626;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.btn-action {
+    background: #1D265A;
+    color: var(--light-blue);
+    border: none;
+    border-radius: 20px;
+    padding: 30px 10px;
+    width: 100%;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-action:hover {
+    background: #253173;
+    transform: scale(1.02);
+}
+
+.text-gold {
+    color: var(--gold);
+}
+
+.progress-box {
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+    font-size: 0.65rem;
+    color: #0d6efd;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.recompensa-link {
+    color: #60a5fa;
+    font-size: 0.65rem;
+    text-decoration: underline;
+}
+
+.wallet-card {
+    background: rgba(89, 152, 194, 0.8);
+    border-radius: 30px;
+    color: white;
+}
+
+.wallet-title {
+    color: var(--dark-navy);
+    font-weight: bold;
+}
+
+.wallet-num {
+    color: var(--dark-navy);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.qr-code {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+/* Popup Waze */
+.waze-popup {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: rgba(255, 255, 255, 0.95);
+    width: 300px;
+    padding: 15px;
+    border-radius: 12px;
+    border-left: 5px solid #33CCFF;
+    z-index: 2000;
+}
+
+.waze-icon-bg {
+    background: #33CCFF;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+}
+
+.notif-text {
+    font-size: 0.65rem;
+    color: #6c757d;
+}
+
+.btn-close-custom {
+    border: none;
+    background: transparent;
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.log-item {
+    color: var(--primary-blue);
+    font-size: 0.75rem;
+    margin-bottom: 5px;
+}

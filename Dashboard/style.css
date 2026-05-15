@@ -1,0 +1,82 @@
+:root {
+    --primary-blue: #0079C8;
+    --dark-navy: #0B0F3E;
+    --accent-blue: #5998C2;
+    --gold: #F9C200;
+}
+
+body {
+    background: linear-gradient(180deg, #C8E1F4 0%, #F8FBFF 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar-custom {
+    background: white;
+    border-radius: 17px;
+    margin: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.search-bar {
+    background: rgba(0, 121, 200, 0.1);
+    border: none;
+    border-radius: 8px;
+    padding: 5px 15px;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-action {
+    background: var(--dark-navy);
+    color: var(--accent-blue);
+    border: none;
+    border-radius: 15px;
+    padding: 25px 10px;
+    width: 100%;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-action:hover {
+    transform: scale(1.02);
+    color: white;
+}
+
+.digital-wallet {
+    background: rgba(0, 121, 200, 0.5);
+    border-radius: 25px;
+    padding: 20px;
+    color: var(--dark-navy);
+}
+
+.badge-status {
+    color: var(--gold);
+    font-weight: bold;
+}
+
+.nav-link-custom {
+    color: var(--accent-blue);
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.nav-link-custom.active {
+    color: var(--primary-blue);
+    text-decoration: underline;
+}
+
+.log-entry {
+    font-size: 0.8rem;
+    color: var(--primary-blue);
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Care+ | Dashboard</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-custom">
+		<div class="container-fluid">
+			<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/ac14z89t_expires_30_days.png"
+				alt="Logo" height="40" class="me-3">
+			<div class="d-flex align-items-center me-auto d-none d-md-flex">
+				<input type="text" id="search-input" class="search-bar" placeholder="Pesquisar...">
+				<i class="fas fa-search ms-2 text-primary"></i>
+			</div>
+			<div class="navbar-nav flex-row">
+				<a class="nav-link-custom active" href="#">Página Inicial</a>
+				<a class="nav-link-custom" href="#">Agendamentos</a>
+				<a class="nav-link-custom" href="#">Meu Perfil</a>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container-fluid px-4">
+		<div class="row">
+			<div class="col-lg-8">
+				<h1 class="text-navy mb-4 fw-bold" id="welcome-text">Olá, Paciente!</h1>
+
+				<div class="glass-card" id="main-appointment">
+					<h3 class="fw-bold mb-3">Próximo Agendamento</h3>
+					<p class="text-muted small">Em 2 dias - Cancelamento indisponível.</p>
+					<div class="row mt-4">
+						<div class="col-md-6 mb-3">
+							<i class="far fa-clock text-primary me-2"></i><strong>12:30 AM</strong>
+							<br><span class="text-muted ms-4">14/11/2025</span>
+						</div>
+						<div class="col-md-6 mb-3">
+							<i class="fas fa-map-marker-alt text-danger me-2"></i>R. Fidêncio Ramos, 302
+						</div>
+					</div>
+				</div>
+
+				<div class="row g-3 mb-4">
+					<div class="col-md-4"><button class="btn-action"
+							onclick="app.navigate('Agendamentos')">Agendamentos</button></div>
+					<div class="col-md-4"><button class="btn-action"
+							onclick="app.navigate('Reagendamento')">Reagendamento</button></div>
+					<div class="col-md-4"><button class="btn-action" onclick="app.navigate('Care+')">Care+</button>
+					</div>
+				</div>
+
+				<div class="glass-card">
+					<h4 class="fw-bold mb-3">Área do Paciente</h4>
+					<div id="log-container">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4">
+				<div class="glass-card text-center">
+					<p>Status <span class="badge-status">Ouro!</span></p>
+					<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/f6hzlh6l_expires_30_days.png"
+						width="70" class="mb-3">
+					<div class="progress mb-2" style="height: 8px;">
+						<div class="progress-bar bg-warning" style="width: 85%"></div>
+					</div>
+					<small class="text-primary">Faltam 7 pontos para o próximo nível!</small>
+				</div>
+
+				<div class="digital-wallet text-center mb-4">
+					<h6>Carteira Digital</h6>
+					<p class="small text-white">0000.111.2222.333-4</p>
+					<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Hbc5dx09zW/0y4j53hc_expires_30_days.png"
+						width="120" class="bg-white p-2 rounded">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
